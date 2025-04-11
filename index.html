@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Typing Test</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="text-display"></div>
+            <textarea id="typing-input"></textarea>
+            <div class="controls">
+                <div id="timer">Time: 0s</div>
+                <div id="wpm">WPM: 0</div>
+                <div id="accuracy">Accuracy: 0%</div>
+            </div>
+            <div id="results" style="display: none;">
+                <h2>Test Results</h2>
+                <p>Words Per Minute: <span id="final-wpm"></span></p>
+                <p>Accuracy: <span id="final-accuracy"></span>%</p>
+                <button id="restart-button">Restart</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

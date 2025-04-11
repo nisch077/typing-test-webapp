@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif; /* A clean, modern font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #181818; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+.container {
+    background-color: #282828; /* Darker container background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+}
+
+#text-display {
+    font-size: 1.4em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #424242;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    background-color: #333;
+    text-align: left;
+}
+
+#text-display span {
+    transition: color 0.1s ease-in-out; /* Smooth color transitions */
+}
+
+#typing-input {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: #e0e0e0;
+    outline: none; /* Remove default focus outline */
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    color: #bdbdbd;
+}
+
+.control-item {
+    font-size: 1em;
+}
+
+#results {
+    margin-top: 30px;
+    color: #bdbdbd;
+}
+
+#results h2 {
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+#results p {
+    margin-bottom: 10px;
+}
+
+#results span {
+    font-weight: bold;
+    color: #aed581; /* Highlighted result color */
+}
+
+#restart-button {
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    background-color: #aed581;
+    color: #222;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#restart-button:hover {
+    background-color: #8bc34a;
+}
+
+.current {
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle highlight for current word */
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.correct {
+    color: #aed581; /* Green for correct */
+}
+
+.incorrect {
+    color: #ef5350; /* Red for incorrect */
+    text-decoration: underline wavy rgba(239, 83, 80, 0.6);
+}

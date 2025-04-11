@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Typing Test</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <label for="text-select">Choose Text:</label>
+            <select id="text-select">
+                <option value="short">Short Words</option>
+                <option value="medium">Common Phrases</option>
+                <option value="long">A Short Paragraph</option>
+            </select>
+            <div id="text-display"></div>
+            <textarea id="typing-input" autofocus></textarea>
+            <div class="controls">
+                <div class="control-item" id="timer">Time: 0s</div>
+                <div class="control-item" id="wpm">WPM: 0</div>
+                <div class="control-item" id="accuracy">Accuracy: 0%</div>
+            </div>
+            <div id="results" style="display:none;">
+                <h2>Test Results</h2>
+                <p>Words Per Minute: <span id="final-wpm">0</span></p>
+                <p>Accuracy: <span id="final-accuracy">0%</span></p>
+                <button id="restart-button">Restart</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
